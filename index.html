@@ -1,12 +1,122 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <title>Reader</title>
-  <link rel="stylesheet" href="style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #e8e3d8;
+            color: #2c2c2c;
+        }
+
+        .top-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            background-color: #d4cfc4;
+            border-bottom: 1px solid #b8b3a8;
+        }
+
+        .nav-left, .nav-center, .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-center {
+            flex: 1;
+            justify-content: center;
+            max-width: 600px;
+        }
+
+        .nav-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 8px;
+            color: #2c2c2c;
+        }
+
+        .nav-btn:hover {
+            opacity: 0.7;
+        }
+
+        .nav-text {
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-indent: 40px;
+        }
+
+        .italic-line {
+            font-style: italic;
+            text-indent: 40px;
+            margin: 16px 0;
+        }
+
+        .dialogue {
+            text-indent: 40px;
+        }
+    </style>
 </head>
 <body>
-  Hello world 
+    <div class="top-nav">
+        <div class="nav-left">
+            <button class="nav-btn">←</button>
+        </div>
+        <div class="nav-center">
+            <button class="nav-btn">‹</button>
+            <span class="nav-text">Том 32 Глава 6</span>
+            <button class="nav-btn">›</button>
+        </div>
+        <div class="nav-right">
+            <button class="nav-btn">⚙</button>
+        </div>
+    </div>
 
-  <script src="main.js"></script>
+    <div class="container">
+        <h1>Test</h1>
+
+        <h2>Test</h2>
+
+        <p>Test</p>
+    </div>
 </body>
 </html>
